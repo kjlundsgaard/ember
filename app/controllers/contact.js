@@ -17,7 +17,6 @@ export default Ember.Controller.extend({
       this.set('responseMessage', `We got your message and we’ll get in touch soon`);
       this.set('emailAddress', '');
       this.set('message', '');
-      throw Error('new test error');
     }
   }
 });
