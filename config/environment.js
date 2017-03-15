@@ -20,7 +20,23 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+    },
+
+    firebase: {
+        apiKey: "AIzaSyAGB-ZcFC86U94ZcVHsYnSyA3Bq0Wra7gs",
+        authDomain: "ember-app-dc58e.firebaseapp.com",
+        databaseURL: "https://ember-app-dc58e.firebaseio.com",
+        storageBucket: "ember-app-dc58e.appspot.com",
+        messagingSenderId: "743260640951",
+    },
+
+
+    // if using ember-cli-content-security-policy
+    contentSecurityPolicy: {
+      'script-src': "'self' 'unsafe-eval' apis.google.com",
+      'frame-src': "'self' https://*.firebaseapp.com",
+      'connect-src': "'self' wss://*.firebaseio.com https://*.googleapis.com"
+    },
   };
 
   if (environment === 'development') {
