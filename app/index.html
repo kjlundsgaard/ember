@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
     <link rel="stylesheet" href="{{rootURL}}assets/library-app.css">
     <script src="https://cdn.ravenjs.com/3.12.1/ember/raven.min.js" crossorigin="anonymous"></script>
-    <script>Raven.config('https://078d9bcdbd26410d89a6f517f00e3fad@sentry.io/109251').install();
+    <script>Raven.config('https://078d9bcdbd26410d89a6f517f00e3fad@sentry.io/109251',
+        { release: 'cccccc'}).install();
     </script>
     {{content-for "head-footer"}}
   </head>

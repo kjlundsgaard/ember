@@ -11,13 +11,13 @@ export default Ember.Controller.extend({
 
   isDisabled: Ember.computed.not('isValid'),
 
-
   actions: {
     sendMessage() {
       alert(`${this.get('emailAddress')}: ${this.get('message')}`);
       this.set('responseMessage', `We got your message and we’ll get in touch soon`);
       this.set('emailAddress', '');
       this.set('message', '');
+      throw Error('new test error');
     }
   }
 });
